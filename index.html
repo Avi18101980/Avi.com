@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TiF</title>
     <style>
+
+            .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+ 
+            .copyMessage {
+            display: none;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+            
+               .lastClick {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        
+        }
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -87,41 +124,7 @@
             background-color: #0056b3;
            
 
-             .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: #333;
-        }
- 
-            .copyMessage {
-            display: none;
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-        }
-            
-               .lastClick {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
         
-        }
         .mobile-menu {
             display: none;
             justify-content: center;
@@ -1176,13 +1179,13 @@
             
         </div>   
      
-          <div id="copyMessage">Text "<span id="copiedText"></span>" was copied</div>
-    <div id="lastClick">Last Click: <span id="lastClickedButton">None</span></div>
-
+          
     <!-- Mobile Menu -->
     <div class="mobile-menu">
         <span>&#9776;</span>
     </div>
+          <div id="copyMessage">Text "<span id="copiedText"></span>" was copied</div>
+    <div id="lastClick">Last Click: <span id="lastClickedButton">None</span></div>
 
     <script>
 
