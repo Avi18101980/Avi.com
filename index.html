@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiF</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-gap: 20px;
+        }
+        .news-item {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            min-height: 200px;
+            cursor: pointer;
+        }
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+        .news-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #007BFF;
+            grid-column: 1;
+        }
+        .news-date {
+            font-size: 14px;
+            font-style: italic;
+            color: #888;
+            grid-column: 1;
+        }
+        .news-content {
+            line-height: 1.8;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            grid-column: 1;
+            opacity: 0.8;
+        }
+        .news-content:hover {
+            opacity: 1;
+        }
+        .read-more {
+            padding: 8px 12px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            justify-self: end;
+        }
+        .read-more:hover {
+            background-color: #0056b3;
+           
+
+             .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #333;
+        }
+ 
+            .copyMessage {
+            display: none;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+            
+               .lastClick {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        
+        }
+        .mobile-menu {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background-color: #007BFF;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 60px;
+            width: 60px;
+            border-radius: 0 0 0 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .mobile-menu span {
+            font-size: 20px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+                margin: 20px 0;
+            }
+            .news-title {
+                font-size: 24px;
+            }
+            .news-date {
+                font-size: 12px;
+            }
+            .news-item {
+                min-height: 180px;
+            }
+            .mobile-menu {
+                display: flex;
+            }
+            .container {
+                padding-top: 80px;
+            }
+        }
+           
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OTHER SPECK</h1>
+          <h1>Website Made by Avi - ( THE TROLLER )</h1>
+    </header>
+    <div class="container">
+        <div class="news-item">
+            <div class="news-title">Acid</div>
+         
+            <div class="news-content">
+                <button class="button" onclick="copyText(this)">24622</button>
+    <button class="button" onclick="copyText(this)">75266</button> 
+    <button class="button" onclick="copyText(this)">97485</button>
+    <button class="button" onclick="copyText(this)">47826</button>
+    <button class="button" onclick="copyText(this)">81788</button>
+    <button class="button" onclick="copyText(this)">98994</button>
+    <button class="button" onclick="copyText(this)">95512</button>
+    <button class="button" onclick="copyText(this)">6123</button>
+    <button class="button" onclick="copyText(this)">720</button>
+    <button class="button" onclick="copyText(this)">14950</button>
+    <button class="button" onclick="copyText(this)">72105</button>
+    <button class="button" onclick="copyText(this)">27893</button>
+    <button class="button" onclick="copyText(this)">77898</button>
+    <button class="button" onclick="copyText(this)">801</button>
+    <button class="button" onclick="copyText(this)">194</button>
+    <button class="button" onclick="copyText(this)">59428</button>
+    <button class="button" onclick="copyText(this)">60425</button>
+    <button class="button" onclick="copyText(this)">60408</button>
+    <button class="button" onclick="copyText(this)">60965</button>
+    <button class="button" onclick="copyText(this)">61211</button>
+
+      
+      
+            </div>
+            
+        </div>
+
+        <div class="news-item">
+            <div class="news-title">Bog</div>
+            
+            <div class="news-content">
+                 <button class="button" onclick="copyText(this)">23927</button>
+    <button class="button" onclick="copyText(this)">61146</button> 
+    <button class="button" onclick="copyText(this)">71549</button>
+    <button class="button" onclick="copyText(this)">96357</button>
+    <button class="button" onclick="copyText(this)">28067</button>
+    <button class="button" onclick="copyText(this)">99670</button>
+    <button class="button" onclick="copyText(this)">78454</button>
+    <button class="button" onclick="copyText(this)">50020</button>
+    <button class="button" onclick="copyText(this)">72127</button>
+    <button class="button" onclick="copyText(this)">83479</button>
+    <button class="button" onclick="copyText(this)">71020</button>
+    <button class="button" onclick="copyText(this)">28741</button>
+    <button class="button" onclick="copyText(this)">78681</button>
+    <button class="button" onclick="copyText(this)">64375</button>
+    <button class="button" onclick="copyText(this)">82112</button>
+    <button class="button" onclick="copyText(this)">78437</button>
+    <button class="button" onclick="copyText(this)">19964</button>
+    <button class="button" onclick="copyText(this)">47616</button>
+    <button class="button" onclick="copyText(this)">61409</button>
+    <button class="button" onclick="copyText(this)">59942</button>
+
+           
+ 
+            </div>
+            
+        </div>
+     <div class="news-item">
+            <div class="news-title"> Bone </div>
+            
+            <div class="news-content">
+              <button class="button" onclick="copyText(this)">46434</button>
+    <button class="button" onclick="copyText(this)">95263</button> 
+    <button class="button" onclick="copyText(this)">74365</button>
+    <button class="button" onclick="copyText(this)">84356</button>
+    <button class="button" onclick="copyText(this)">58535</button>
+    <button class="button" onclick="copyText(this)">3198</button>
+    <button class="button" onclick="copyText(this)">80311</button>
+    <button class="button" onclick="copyText(this)">15850</button>
+    <button class="button" onclick="copyText(this)">54804</button>
+    <button class="button" onclick="copyText(this)">93841</button>
+    <button class="button" onclick="copyText(this)">93454</button>
+    <button class="button" onclick="copyText(this)">10327</button>
+    <button class="button" onclick="copyText(this)">181</button>
+    <button class="button" onclick="copyText(this)">59327</button>
+    <button class="button" onclick="copyText(this)">60153</button>
+    <button class="button" onclick="copyText(this)">60094</button>
+    <button class="button" onclick="copyText(this)">60478</button>
+    <button class="button" onclick="copyText(this)">60506</button>
+    <button class="button" onclick="copyText(this)">60539</button>
+    <button class="button" onclick="copyText(this)">60460</button>
+    
+
+ 
+            
+            
+        </div>
+      </div>   
+    <div class="news-item">
+            <div class="news-title"> Biolume </div>
+            
+            <div class="news-content">
+               <button class="button" onclick="copyText(this)">45396</button>
+    <button class="button" onclick="copyText(this)">97398</button> 
+    <button class="button" onclick="copyText(this)">99509</button>
+    <button class="button" onclick="copyText(this)">65052</button>
+    <button class="button" onclick="copyText(this)">63859</button>
+    <button class="button" onclick="copyText(this)">58403</button>
+    <button class="button" onclick="copyText(this)">7502</button>
+    <button class="button" onclick="copyText(this)">17583</button>
+    <button class="button" onclick="copyText(this)">25881</button>
+    <button class="button" onclick="copyText(this)">97751</button>
+    <button class="button" onclick="copyText(this)">75620</button>
+    <button class="button" onclick="copyText(this)">22365</button>
+    <button class="button" onclick="copyText(this)">45655</button>
+    <button class="button" onclick="copyText(this)">8338</button>
+    <button class="button" onclick="copyText(this)">92310</button>
+    <button class="button" onclick="copyText(this)">7167</button>
+    <button class="button" onclick="copyText(this)">14373</button>
+    <button class="button" onclick="copyText(this)">64694</button>
+    <button class="button" onclick="copyText(this)">48083</button>
+    <button class="button" onclick="copyText(this)">250</button>
+
+         
+            
+        </div>
+       </div>
+
+         
+        <div class="news-item">
+            <div class="news-title">Botanical</div>
+         
+            <div class="news-content">
+                <button class="button" onclick="copyText(this)">47656</button>
+    <button class="button" onclick="copyText(this)">58427</button> 
+    <button class="button" onclick="copyText(this)">82668</button>
+    <button class="button" onclick="copyText(this)">80150</button>
+    <button class="button" onclick="copyText(this)">92679</button>
+    <button class="button" onclick="copyText(this)">82179</button>
+    <button class="button" onclick="copyText(this)">61385</button>
+    <button class="button" onclick="copyText(this)">14519</button>
+    <button class="button" onclick="copyText(this)">60352</button>
+    <button class="button" onclick="copyText(this)">60315</button>
+    <button class="button" onclick="copyText(this)">61176</button>
+    <button class="button" onclick="copyText(this)">63640</button>
+    <button class="button" onclick="copyText(this)">63814</button>
+    <button class="button" onclick="copyText(this)">63819</button>
+    <button class="button" onclick="copyText(this)">64038</button>
+    <button class="button" onclick="copyText(this)">64682</button>
+    <button class="button" onclick="copyText(this)">64870</button>
+    <button class="button" onclick="copyText(this)">66347</button>
+    <button class="button" onclick="copyText(this)">66304</button>
+    <button class="button" onclick="copyText(this)">66387</button>
+
+           
+
+            </div>
+            
+        </div>
+  
+        
+        <div class="news-item">
+            <div class="news-title">Chaos</div>
+         
+            <div class="news-content">
+               <button class="button" onclick="copyText(this)">3901</button>
+    <button class="button" onclick="copyText(this)">67753</button> 
+    <button class="button" onclick="copyText(this)">83735</button>
+    <button class="button" onclick="copyText(this)">2311</button>
+    <button class="button" onclick="copyText(this)">98208</button>
+    <button class="button" onclick="copyText(this)">36432</button>
+    <button class="button" onclick="copyText(this)">33174</button>
+    <button class="button" onclick="copyText(this)">8770</button>
+    <button class="button" onclick="copyText(this)">35575</button>
+    <button class="button" onclick="copyText(this)">37605</button>
+    <button class="button" onclick="copyText(this)">38487</button>
+    <button class="button" onclick="copyText(this)">40838</button>
+    <button class="button" onclick="copyText(this)">40920</button>
+    <button class="button" onclick="copyText(this)">43123</button>
+    <button class="button" onclick="copyText(this)">44624</button>
+    <button class="button" onclick="copyText(this)">95607</button>
+    <button class="button" onclick="copyText(this)">38309</button>
+    <button class="button" onclick="copyText(this)">36535</button>
+    <button class="button" onclick="copyText(this)">51537</button>
+    <button class="button" onclick="copyText(this)">39843</button>
+
+      
+
+
+
+            </div>
+            
+        </div> 
+         
+       
+
+
+
+         <div class="news-item">
+            <div class="news-title">Crystal</div>
+         
+            <div class="news-content">
+                <button class="button" onclick="copyText(this)">93586</button>
+    <button class="button" onclick="copyText(this)">88268</button> 
+    <button class="button" onclick="copyText(this)">13911</button>
+    <button class="button" onclick="copyText(this)">20364</button>
+    <button class="button" onclick="copyText(this)">50420</button>
+    <button class="button" onclick="copyText(this)">57683</button>
+    <button class="button" onclick="copyText(this)">66365</button>
+    <button class="button" onclick="copyText(this)">81593</button>
+    <button class="button" onclick="copyText(this)">22882</button>
+    <button class="button" onclick="copyText(this)">90835</button>
+    <button class="button" onclick="copyText(this)">88828</button>
+    <button class="button" onclick="copyText(this)">84893</button>
+    <button class="button" onclick="copyText(this)">85000</button>
+    <button class="button" onclick="copyText(this)">59531</button>
+    <button class="button" onclick="copyText(this)">59707</button>
+    <button class="button" onclick="copyText(this)">60482</button>
+    <button class="button" onclick="copyText(this)">60510</button>
+    <button class="button" onclick="copyText(this)">60575</button>
+    <button class="button" onclick="copyText(this)">60613</button>
+    <button class="button" onclick="copyText(this)">60629</button>
+
+            </div>
+            
+        </div> 
+       
+       <div class="news-item">
+            <div class="news-title">Glacia</div>
+         
+            <div class="news-content">
+              <button class="button" onclick="copyText(this)">23074</button>
+    <button class="button" onclick="copyText(this)">30030</button> 
+    <button class="button" onclick="copyText(this)">97399</button>
+    <button class="button" onclick="copyText(this)">98618</button>
+    <button class="button" onclick="copyText(this)">66262</button>
+    <button class="button" onclick="copyText(this)">56944</button>
+    <button class="button" onclick="copyText(this)">88452</button>
+    <button class="button" onclick="copyText(this)">71543</button>
+    <button class="button" onclick="copyText(this)">94543</button>
+    <button class="button" onclick="copyText(this)">84075</button>
+    <button class="button" onclick="copyText(this)">50535</button>
+    <button class="button" onclick="copyText(this)">53958</button>
+    <button class="button" onclick="copyText(this)">24077</button>
+    <button class="button" onclick="copyText(this)">2923</button>
+    <button class="button" onclick="copyText(this)">14257</button>
+    <button class="button" onclick="copyText(this)">70044</button>
+    <button class="button" onclick="copyText(this)">86589</button>
+    <button class="button" onclick="copyText(this)">81102</button>
+    <button class="button" onclick="copyText(this)">608</button>
+    <button class="button" onclick="copyText(this)">18086</button>
+
+
+      
+
+
+
+            </div>
+            
+        </div> 
+   
+         <div class="news-item">
+            <div class="news-title">Jungle</div>
+         
+            <div class="news-content">
+              <button class="button" onclick="copyText(this)">23074</button>
+     <button class="button" onclick="copyText(this)">57154</button>
+    <button class="button" onclick="copyText(this)">8819</button> 
+    <button class="button" onclick="copyText(this)">22974</button>
+    <button class="button" onclick="copyText(this)">53118</button>
+    <button class="button" onclick="copyText(this)">60158</button>
+    <button class="button" onclick="copyText(this)">55617</button>
+    <button class="button" onclick="copyText(this)">54059</button>
+    <button class="button" onclick="copyText(this)">46075</button>
+    <button class="button" onclick="copyText(this)">1731</button>
+    <button class="button" onclick="copyText(this)">49216</button>
+    <button class="button" onclick="copyText(this)">91856</button>
+    <button class="button" onclick="copyText(this)">97524</button>
+    <button class="button" onclick="copyText(this)">24446</button>
+    <button class="button" onclick="copyText(this)">2324</button>
+    <button class="button" onclick="copyText(this)">201</button>
+    <button class="button" onclick="copyText(this)">59611</button>
+    <button class="button" onclick="copyText(this)">59880</button>
+    <button class="button" onclick="copyText(this)">60105</button>
+    <button class="button" onclick="copyText(this)">60165</button>
+    <button class="button" onclick="copyText(this)">60322</button>
+
+
+      
+
+
+
+            </div>
+            
+        </div> 
+       
+        
+
+            <div class="news-item">
+            <div class="news-title">Luster</div>
+         
+            <div class="news-content">
+             <button class="button" onclick="copyText(this)">73334</button>
+    <button class="button" onclick="copyText(this)">70101</button> 
+    <button class="button" onclick="copyText(this)">63133</button>
+    <button class="button" onclick="copyText(this)">60900</button>
+    <button class="button" onclick="copyText(this)">51802</button>
+    <button class="button" onclick="copyText(this)">97822</button>
+    <button class="button" onclick="copyText(this)">94790</button>
+    <button class="button" onclick="copyText(this)">285</button>
+    <button class="button" onclick="copyText(this)">59593</button>
+    <button class="button" onclick="copyText(this)">59625</button>
+    <button class="button" onclick="copyText(this)">60386</button>
+    <button class="button" onclick="copyText(this)">60633</button>
+    <button class="button" onclick="copyText(this)">60833</button>
+    <button class="button" onclick="copyText(this)">60913</button>
+    <button class="button" onclick="copyText(this)">61027</button>
+    <button class="button" onclick="copyText(this)">63558</button>
+    <button class="button" onclick="copyText(this)">64009</button>
+    <button class="button" onclick="copyText(this)">64141</button>
+    <button class="button" onclick="copyText(this)">64125</button>
+    <button class="button" onclick="copyText(this)">64561</button>
+
+
+      
+
+
+
+            </div>
+            
+        </div>    
+
+          <div class="news-item">
+            <div class="news-title">Crimson</div>
+         
+            <div class="news-content">
+               <button class="button" onclick="copyText(this)">49755</button>
+    <button class="button" onclick="copyText(this)">15108</button> 
+    <button class="button" onclick="copyText(this)">6404</button>
+    <button class="button" onclick="copyText(this)">55457</button>
+    <button class="button" onclick="copyText(this)">17508</button>
+    <button class="button" onclick="copyText(this)">58008</button>
+    <button class="button" onclick="copyText(this)">63719</button>
+    <button class="button" onclick="copyText(this)">65353</button>
+    <button class="button" onclick="copyText(this)">45518</button>
+    <button class="button" onclick="copyText(this)">80465</button>
+    <button class="button" onclick="copyText(this)">18382</button>
+    <button class="button" onclick="copyText(this)">76998</button>
+    <button class="button" onclick="copyText(this)">54304</button>
+    <button class="button" onclick="copyText(this)">23552</button>
+    <button class="button" onclick="copyText(this)">83624</button>
+    <button class="button" onclick="copyText(this)">22717</button>
+    <button class="button" onclick="copyText(this)">282</button>
+    <button class="button" onclick="copyText(this)">84623</button>
+    <button class="button" onclick="copyText(this)">59576</button>
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+     <div class="news-item">
+            <div class="news-title">Mallow</div>
+         
+            <div class="news-content">
+               <button class="button" onclick="copyText(this)">49755</button>
+    
+          <button class="button" onclick="copyText(this)">77629</button>
+    <button class="button" onclick="copyText(this)">68423</button> 
+    <button class="button" onclick="copyText(this)">19456</button>
+    <button class="button" onclick="copyText(this)">19369</button>
+    <button class="button" onclick="copyText(this)">59233</button>
+    <button class="button" onclick="copyText(this)">91541</button>
+    <button class="button" onclick="copyText(this)">46062</button>
+    <button class="button" onclick="copyText(this)">17842</button>
+    <button class="button" onclick="copyText(this)">98647</button>
+    <button class="button" onclick="copyText(this)">89723</button>
+    <button class="button" onclick="copyText(this)">88292</button>
+    <button class="button" onclick="copyText(this)">70340</button>
+    <button class="button" onclick="copyText(this)">17843</button>
+    <button class="button" onclick="copyText(this)">53879</button>
+    <button class="button" onclick="copyText(this)">59414</button>
+    <button class="button" onclick="copyText(this)">59602</button>
+    <button class="button" onclick="copyText(this)">59628</button>
+    <button class="button" onclick="copyText(this)">59517</button>
+    <button class="button" onclick="copyText(this)">59828</button>
+    <button class="button" onclick="copyText(this)">60238</button>
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+       <div class="news-item">
+            <div class="news-title">Molten</div>
+         
+            <div class="news-content">
+               <button class="button" onclick="copyText(this)">49755</button>
+    
+         <button class="button" onclick="copyText(this)">98283</button>
+    <button class="button" onclick="copyText(this)">53249</button> 
+    <button class="button" onclick="copyText(this)">92426</button>
+    <button class="button" onclick="copyText(this)">84203</button>
+    <button class="button" onclick="copyText(this)">53540</button>
+    <button class="button" onclick="copyText(this)">83728</button>
+    <button class="button" onclick="copyText(this)">72907</button>
+    <button class="button" onclick="copyText(this)">68712</button>
+    <button class="button" onclick="copyText(this)">7716</button>
+    <button class="button" onclick="copyText(this)">7130</button>
+    <button class="button" onclick="copyText(this)">61503</button>
+    <button class="button" onclick="copyText(this)">2926</button>
+    <button class="button" onclick="copyText(this)">3266</button>
+    <button class="button" onclick="copyText(this)">19839</button>
+    <button class="button" onclick="copyText(this)">8580</button>
+    <button class="button" onclick="copyText(this)">11954</button>
+    <button class="button" onclick="copyText(this)">65360</button>
+    <button class="button" onclick="copyText(this)">26528</button>
+    <button class="button" onclick="copyText(this)">91392</button>
+    <button class="button" onclick="copyText(this)">79472</button>
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>    
+
+        <div class="news-item">
+            <div class="news-title">Mycelium</div>
+         
+            <div class="news-content">
+               <button class="button" onclick="copyText(this)">49755</button>
+    
+         <button class="button" onclick="copyText(this)">51727</button>
+    <button class="button" onclick="copyText(this)">85980</button> 
+    <button class="button" onclick="copyText(this)">13713</button>
+    <button class="button" onclick="copyText(this)">98883</button>
+    <button class="button" onclick="copyText(this)">83443</button>
+    <button class="button" onclick="copyText(this)">14992</button>
+    <button class="button" onclick="copyText(this)">19234</button>
+    <button class="button" onclick="copyText(this)">45565</button>
+    <button class="button" onclick="copyText(this)">90862</button>
+    <button class="button" onclick="copyText(this)">71930</button>
+    <button class="button" onclick="copyText(this)">21182</button>
+    <button class="button" onclick="copyText(this)">58685</button>
+    <button class="button" onclick="copyText(this)">45768</button>
+    <button class="button" onclick="copyText(this)">84076</button>
+    <button class="button" onclick="copyText(this)">59369</button>
+    <button class="button" onclick="copyText(this)">60091</button>
+    <button class="button" onclick="copyText(this)">60201</button>
+    <button class="button" onclick="copyText(this)">60473</button>
+    <button class="button" onclick="copyText(this)">60544</button>
+    <button class="button" onclick="copyText(this)">60560</button>
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+             <div class="news-item">
+            <div class="news-title">Obsidian</div>
+         
+            <div class="news-content">
+               <button class="button" onclick="copyText(this)">49755</button>
+    
+          <button class="button" onclick="copyText(this)">79195</button>
+    <button class="button" onclick="copyText(this)">49284</button> 
+    <button class="button" onclick="copyText(this)">49480</button>
+    <button class="button" onclick="copyText(this)">94150</button>
+    <button class="button" onclick="copyText(this)">75207</button>
+    <button class="button" onclick="copyText(this)">54663</button>
+    <button class="button" onclick="copyText(this)">80867</button>
+    <button class="button" onclick="copyText(this)">88703</button>
+    <button class="button" onclick="copyText(this)">81691</button>
+    <button class="button" onclick="copyText(this)">1753</button>
+    <button class="button" onclick="copyText(this)">88786</button>
+    <button class="button" onclick="copyText(this)">91695</button>
+    <button class="button" onclick="copyText(this)">59994</button>
+    <button class="button" onclick="copyText(this)">60257</button>
+    <button class="button" onclick="copyText(this)">60428</button>
+    <button class="button" onclick="copyText(this)">60681</button>
+    <button class="button" onclick="copyText(this)">60804</button>
+    <button class="button" onclick="copyText(this)">61196</button>
+    <button class="button" onclick="copyText(this)">61292</button>
+    <button class="button" onclick="copyText(this)">61184</button>
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+         <div class="news-item">
+            <div class="news-title">Plague</div>
+         
+            <div class="news-content">
+               
+            <button class="button" onclick="copyText(this)">62988</button>
+    <button class="button" onclick="copyText(this)">25043</button> 
+    <button class="button" onclick="copyText(this)">10652</button>
+    <button class="button" onclick="copyText(this)">95232</button>
+    <button class="button" onclick="copyText(this)">72201</button>
+    <button class="button" onclick="copyText(this)">46402</button>
+    <button class="button" onclick="copyText(this)">73550</button>
+    <button class="button" onclick="copyText(this)">73549</button>
+    <button class="button" onclick="copyText(this)">95421</button>
+    <button class="button" onclick="copyText(this)">53494</button>
+    <button class="button" onclick="copyText(this)">75727</button>
+    <button class="button" onclick="copyText(this)">99088</button>
+    <button class="button" onclick="copyText(this)">50226</button>
+    <button class="button" onclick="copyText(this)">56293</button>
+    <button class="button" onclick="copyText(this)">17291</button>
+    <button class="button" onclick="copyText(this)">59411</button>
+    <button class="button" onclick="copyText(this)">60179</button>
+    <button class="button" onclick="copyText(this)">60299</button>
+    <button class="button" onclick="copyText(this)">60666</button>
+    <button class="button" onclick="copyText(this)">60773</button>
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+    
+         <div class="news-item">
+            <div class="news-title">Ruins</div>
+         
+            <div class="news-content">
+               
+            <button class="button" onclick="copyText(this)">52188</button>
+    <button class="button" onclick="copyText(this)">78214</button> 
+    <button class="button" onclick="copyText(this)">83056</button>
+    <button class="button" onclick="copyText(this)">71381</button>
+    <button class="button" onclick="copyText(this)">61273</button>
+    <button class="button" onclick="copyText(this)">19474</button>
+    <button class="button" onclick="copyText(this)">90552</button>
+    <button class="button" onclick="copyText(this)">91184</button>
+    <button class="button" onclick="copyText(this)">72278</button>
+    <button class="button" onclick="copyText(this)">60309</button>
+    <button class="button" onclick="copyText(this)">65511</button>
+    <button class="button" onclick="copyText(this)">7807</button>
+    <button class="button" onclick="copyText(this)">67774</button>
+    <button class="button" onclick="copyText(this)">7665</button>
+    <button class="button" onclick="copyText(this)">47149</button>
+    <button class="button" onclick="copyText(this)">2120</button>
+    <button class="button" onclick="copyText(this)">55521</button>
+    <button class="button" onclick="copyText(this)">75100</button>
+    <button class="button" onclick="copyText(this)">22163</button>
+    <button class="button" onclick="copyText(this)">52906</button>
+
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+        <div class="news-item">
+            <div class="news-title">Sands</div>
+         
+            <div class="news-content">
+               
+           <button class="button" onclick="copyText(this)">95427</button>
+    <button class="button" onclick="copyText(this)">52036</button> 
+    <button class="button" onclick="copyText(this)">87395</button>
+    <button class="button" onclick="copyText(this)">47464</button>
+    <button class="button" onclick="copyText(this)">84129</button>
+    <button class="button" onclick="copyText(this)">59772</button>
+    <button class="button" onclick="copyText(this)">53663</button>
+    <button class="button" onclick="copyText(this)">51888</button>
+    <button class="button" onclick="copyText(this)">71929</button>
+    <button class="button" onclick="copyText(this)">94036</button>
+    <button class="button" onclick="copyText(this)">17581</button>
+    <button class="button" onclick="copyText(this)">91930</button>
+    <button class="button" onclick="copyText(this)">95118</button>
+    <button class="button" onclick="copyText(this)">91440</button>
+    <button class="button" onclick="copyText(this)">74496</button>
+    <button class="button" onclick="copyText(this)">5986</button>
+    <button class="button" onclick="copyText(this)">147</button>
+    <button class="button" onclick="copyText(this)">59708</button>
+    <button class="button" onclick="copyText(this)">60021</button>
+    <button class="button" onclick="copyText(this)">60210</button>
+
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+         <div class="news-item">
+            <div class="news-title">Shadow</div>
+         
+            <div class="news-content">
+               
+           <button class="button" onclick="copyText(this)">80548</button>
+    <button class="button" onclick="copyText(this)">95121</button> 
+    <button class="button" onclick="copyText(this)">87992</button>
+    <button class="button" onclick="copyText(this)">50757</button>
+    <button class="button" onclick="copyText(this)">28892</button>
+    <button class="button" onclick="copyText(this)">26965</button>
+    <button class="button" onclick="copyText(this)">67612</button>
+    <button class="button" onclick="copyText(this)">9217</button>
+    <button class="button" onclick="copyText(this)">65227</button>
+    <button class="button" onclick="copyText(this)">64154</button>
+    <button class="button" onclick="copyText(this)">3174</button>
+    <button class="button" onclick="copyText(this)">63276</button>
+    <button class="button" onclick="copyText(this)">72133</button>
+    <button class="button" onclick="copyText(this)">88919</button>
+    <button class="button" onclick="copyText(this)">89468</button>
+    <button class="button" onclick="copyText(this)">50979</button>
+    <button class="button" onclick="copyText(this)">322</button>
+    <button class="button" onclick="copyText(this)">59270</button>
+    <button class="button" onclick="copyText(this)">59529</button>
+    <button class="button" onclick="copyText(this)">59564</button>
+
+
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+         <div class="news-item">
+            <div class="news-title">Spires</div>
+         
+            <div class="news-content">
+               
+            <button class="button" onclick="copyText(this)">83573</button>
+    <button class="button" onclick="copyText(this)">55856</button> 
+    <button class="button" onclick="copyText(this)">84705</button>
+    <button class="button" onclick="copyText(this)">46230</button>
+    <button class="button" onclick="copyText(this)">96976</button>
+    <button class="button" onclick="copyText(this)">71479</button>
+    <button class="button" onclick="copyText(this)">94493</button>
+    <button class="button" onclick="copyText(this)">75440</button>
+    <button class="button" onclick="copyText(this)">48121</button>
+    <button class="button" onclick="copyText(this)">57219</button>
+    <button class="button" onclick="copyText(this)">53740</button>
+    <button class="button" onclick="copyText(this)">45903</button>
+    <button class="button" onclick="copyText(this)">68064</button>
+    <button class="button" onclick="copyText(this)">81162</button>
+    <button class="button" onclick="copyText(this)">82892</button>
+    <button class="button" onclick="copyText(this)">82574</button>
+    <button class="button" onclick="copyText(this)">54000</button>
+    <button class="button" onclick="copyText(this)">71490</button>
+    <button class="button" onclick="copyText(this)">59646</button>
+    <button class="button" onclick="copyText(this)">59865</button>
+
+
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+        <div class="news-item">
+            <div class="news-title">Splinter</div>
+         
+            <div class="news-content">
+               
+           <button class="button" onclick="copyText(this)">59618</button>
+    <button class="button" onclick="copyText(this)">17051</button> 
+    <button class="button" onclick="copyText(this)">63794</button>
+    <button class="button" onclick="copyText(this)">49173</button>
+    <button class="button" onclick="copyText(this)">49174</button>
+    <button class="button" onclick="copyText(this)">1609</button>
+    <button class="button" onclick="copyText(this)">93959</button>
+    <button class="button" onclick="copyText(this)">65226</button>
+    <button class="button" onclick="copyText(this)">12844</button>
+    <button class="button" onclick="copyText(this)">5813</button>
+    <button class="button" onclick="copyText(this)">95244</button>
+    <button class="button" onclick="copyText(this)">59498</button>
+    <button class="button" onclick="copyText(this)">46200</button>
+    <button class="button" onclick="copyText(this)">14511</button>
+    <button class="button" onclick="copyText(this)">63331</button>
+    <button class="button" onclick="copyText(this)">69691</button>
+    <button class="button" onclick="copyText(this)">79453</button>
+    <button class="button" onclick="copyText(this)">55344</button>
+    <button class="button" onclick="copyText(this)">74603</button>
+    <button class="button" onclick="copyText(this)">64822</button>
+
+
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+        <div class="news-item">
+            <div class="news-title">Steppes</div>
+         
+            <div class="news-content">
+               
+            <button class="button" onclick="copyText(this)">19235</button>
+    <button class="button" onclick="copyText(this)">54877</button> 
+    <button class="button" onclick="copyText(this)">65413</button>
+    <button class="button" onclick="copyText(this)">70153</button>
+    <button class="button" onclick="copyText(this)">45151</button>
+    <button class="button" onclick="copyText(this)">92701</button>
+    <button class="button" onclick="copyText(this)">53919</button>
+    <button class="button" onclick="copyText(this)">26964</button>
+    <button class="button" onclick="copyText(this)">74292</button>
+    <button class="button" onclick="copyText(this)">21972</button>
+    <button class="button" onclick="copyText(this)">81713</button>
+    <button class="button" onclick="copyText(this)">64168</button>
+    <button class="button" onclick="copyText(this)">91983</button>
+    <button class="button" onclick="copyText(this)">98128</button>
+    <button class="button" onclick="copyText(this)">53741</button>
+    <button class="button" onclick="copyText(this)">46371</button>
+    <button class="button" onclick="copyText(this)">11219</button>
+    <button class="button" onclick="copyText(this)">81188</button>
+    <button class="button" onclick="copyText(this)">8115</button>
+    <button class="button" onclick="copyText(this)">88037</button>
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+         <div class="news-item">
+            <div class="news-title">Sulfuric</div>
+         
+            <div class="news-content">
+               
+            <button class="button" onclick="copyText(this)">61608</button>
+    <button class="button" onclick="copyText(this)">72223</button> 
+    <button class="button" onclick="copyText(this)">61777</button>
+    <button class="button" onclick="copyText(this)">79170</button>
+    <button class="button" onclick="copyText(this)">97390</button>
+    <button class="button" onclick="copyText(this)">87723</button>
+    <button class="button" onclick="copyText(this)">61225</button>
+    <button class="button" onclick="copyText(this)">69339</button>
+    <button class="button" onclick="copyText(this)">57734</button>
+    <button class="button" onclick="copyText(this)">47394</button>
+    <button class="button" onclick="copyText(this)">77345</button>
+    <button class="button" onclick="copyText(this)">69662</button>
+    <button class="button" onclick="copyText(this)">3746</button>
+    <button class="button" onclick="copyText(this)">55009</button>
+    <button class="button" onclick="copyText(this)">25996</button>
+    <button class="button" onclick="copyText(this)">77287</button>
+    <button class="button" onclick="copyText(this)">2245</button>
+    <button class="button" onclick="copyText(this)">46199</button>
+    <button class="button" onclick="copyText(this)">90427</button>
+    <button class="button" onclick="copyText(this)">83210</button>
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+     
+         <div class="news-item">
+            <div class="news-title">Sky</div>
+         
+            <div class="news-content">
+               
+             <button class="button" onclick="copyText(this)">80143</button>
+    <button class="button" onclick="copyText(this)">14575</button> 
+    <button class="button" onclick="copyText(this)">97350</button>
+    <button class="button" onclick="copyText(this)">21700</button>
+    <button class="button" onclick="copyText(this)">72393</button>
+    <button class="button" onclick="copyText(this)">79859</button>
+    <button class="button" onclick="copyText(this)">95513</button>
+    <button class="button" onclick="copyText(this)">1167</button>
+    <button class="button" onclick="copyText(this)">19233</button>
+    <button class="button" onclick="copyText(this)">62731</button>
+    <button class="button" onclick="copyText(this)">26961</button>
+    <button class="button" onclick="copyText(this)">11869</button>
+    <button class="button" onclick="copyText(this)">69411</button>
+    <button class="button" onclick="copyText(this)">69583</button>
+    <button class="button" onclick="copyText(this)">91552</button>
+    <button class="button" onclick="copyText(this)">72039</button>
+    <button class="button" onclick="copyText(this)">48916</button>
+    <button class="button" onclick="copyText(this)">73532</button>
+    <button class="button" onclick="copyText(this)">11212</button>
+    <button class="button" onclick="copyText(this)">95969</button>
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+      <div class="news-item">
+            <div class="news-title">Thornwood</div>
+         
+            <div class="news-content">
+               
+              <button class="button" onclick="copyText(this)">63419</button>
+    <button class="button" onclick="copyText(this)">97229</button> 
+    <button class="button" onclick="copyText(this)">53362</button>
+    <button class="button" onclick="copyText(this)">86590</button>
+    <button class="button" onclick="copyText(this)">93234</button>
+    <button class="button" onclick="copyText(this)">11517</button>
+    <button class="button" onclick="copyText(this)">80028</button>
+    <button class="button" onclick="copyText(this)">26255</button>
+    <button class="button" onclick="copyText(this)">99203</button>
+    <button class="button" onclick="copyText(this)">53250</button>
+    <button class="button" onclick="copyText(this)">63507</button>
+    <button class="button" onclick="copyText(this)">93873</button>
+    <button class="button" onclick="copyText(this)">17311</button>
+    <button class="button" onclick="copyText(this)">47220</button>
+    <button class="button" onclick="copyText(this)">90632</button>
+    <button class="button" onclick="copyText(this)">27837</button>
+    <button class="button" onclick="copyText(this)">7253</button>
+    <button class="button" onclick="copyText(this)">3008</button>
+    <button class="button" onclick="copyText(this)">23110</button>
+    <button class="button" onclick="copyText(this)">67258</button>
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+        <div class="news-item">
+            <div class="news-title">Veldan</div>
+         
+            <div class="news-content">
+               
+                <button class="button" onclick="copyText(this)">51480</button>
+    <button class="button" onclick="copyText(this)">76692</button> 
+    <button class="button" onclick="copyText(this)">60675</button>
+    <button class="button" onclick="copyText(this)">57225</button>
+    <button class="button" onclick="copyText(this)">94602</button>
+    <button class="button" onclick="copyText(this)">83212</button>
+    <button class="button" onclick="copyText(this)">66521</button>
+    <button class="button" onclick="copyText(this)">60082</button>
+    <button class="button" onclick="copyText(this)">51315</button>
+    <button class="button" onclick="copyText(this)">93542</button>
+    <button class="button" onclick="copyText(this)">8639</button>
+    <button class="button" onclick="copyText(this)">83774</button>
+    <button class="button" onclick="copyText(this)">89268</button>
+    <button class="button" onclick="copyText(this)">7284</button>
+    <button class="button" onclick="copyText(this)">2531</button>
+    <button class="button" onclick="copyText(this)">79892</button>
+    <button class="button" onclick="copyText(this)">64787</button>
+    <button class="button" onclick="copyText(this)">71923</button>
+    <button class="button" onclick="copyText(this)">107</button>
+    <button class="button" onclick="copyText(this)">28699</button>
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+
+       <div class="news-item">
+            <div class="news-title">Wastes</div>
+         
+            <div class="news-content">
+               
+                <button class="button" onclick="copyText(this)">68490</button>
+    <button class="button" onclick="copyText(this)">74849</button> 
+    <button class="button" onclick="copyText(this)">97638</button>
+    <button class="button" onclick="copyText(this)">22135</button>
+    <button class="button" onclick="copyText(this)">98071</button>
+    <button class="button" onclick="copyText(this)">11819</button>
+    <button class="button" onclick="copyText(this)">81990</button>
+    <button class="button" onclick="copyText(this)">26739</button>
+    <button class="button" onclick="copyText(this)">63877</button>
+    <button class="button" onclick="copyText(this)">56394</button>
+    <button class="button" onclick="copyText(this)">14576</button>
+    <button class="button" onclick="copyText(this)">68221</button>
+    <button class="button" onclick="copyText(this)">64788</button>
+    <button class="button" onclick="copyText(this)">52622</button>
+    <button class="button" onclick="copyText(this)">74217</button>
+    <button class="button" onclick="copyText(this)">51885</button>
+    <button class="button" onclick="copyText(this)">97876</button>
+    <button class="button" onclick="copyText(this)">56175</button>
+    <button class="button" onclick="copyText(this)">47365</button>
+    <button class="button" onclick="copyText(this)">72778</button>
+
+
+
+
+  
+    
+
+
+      
+
+
+
+            </div>
+            
+        </div>   
+     
+          <div id="copyMessage">Text "<span id="copiedText"></span>" was copied</div>
+    <div id="lastClick">Last Click: <span id="lastClickedButton">None</span></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <span>&#9776;</span>
+    </div>
+
+    <script>
+
+          function copyText(button) {
+            const textToCopy = button.textContent;
+            const tempInput = document.createElement("input");
+            document.body.appendChild(tempInput);
+            tempInput.setAttribute("value", textToCopy);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            
+            const copyMessage = document.getElementById("copyMessage");
+            const copiedText = document.getElementById("copiedText");
+            copiedText.textContent = textToCopy;
+            copyMessage.style.display = "block";
+            
+            setTimeout(function() {
+                copyMessage.style.display = "none";
+            }, 2000);
+            
+            const lastClickedButton = document.getElementById("lastClickedButton");
+            lastClickedButton.textContent = textToCopy;
+        }
+
+
+        // Toggle Mobile Menu
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const container = document.querySelector('.container');
+
+        mobileMenu.addEventListener('click', () => {
+            container.classList.toggle('menu-open');
+        });
+    </script>
+</body>
+</html>
